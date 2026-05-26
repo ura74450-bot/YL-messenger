@@ -801,7 +801,7 @@ body::after{content:'';position:fixed;bottom:80px;left:-100px;width:300px;height
 // ══════════════════════════════════════════════════════════════
 
 // ── Server config ────────────────────────────────────────────
-const SERVER_URL = ''; // leave empty for local, or paste Render URL
+const SERVER_URL = 'https://yl-messenger.onrender.com'; // leave empty for local, or paste Render URL
 function getApiBase(){ return SERVER_URL || location.protocol+'//'+location.host; }
 function getWsUrl(){ return SERVER_URL ? SERVER_URL.replace('https://','wss://').replace('http://','ws://') : (location.protocol==='https:'?'wss':'ws')+'://'+location.host; }
 async function apiGet(p){ try{ return await(await fetch(getApiBase()+p)).json(); }catch{ return null; } }
