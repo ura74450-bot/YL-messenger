@@ -1,8 +1,0 @@
-{
-  "name": "yl-messenger",
-  "version": "1.0.0",
-  "description": "YL Messenger — real-time messaging app",
-  "main": "server.js",
-  "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=16" }
-}
